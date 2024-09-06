@@ -51,4 +51,3 @@ Displays the logs in a readable format, providing information such as event ID, 
 - **Unauthorized Device Detection**: Customize the `unauthorized_keywords` in `analyze_usb_activity()` to match specific device names, serial numbers, or any suspicious behavior you want to flag.
 
 ## Example Output
-
