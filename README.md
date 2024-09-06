@@ -50,4 +50,21 @@ Displays the logs in a readable format, providing information such as event ID, 
   
 - **Unauthorized Device Detection**: Customize the `unauthorized_keywords` in `analyze_usb_activity()` to match specific device names, serial numbers, or any suspicious behavior you want to flag.
 
-## Example Output
+
+## Future Scope of the Project
+- **Cross-platform support**: Extend compatibility to non-Windows systems like Linux using libraries such as `usbrip`.
+- **Automated Reports**: Add functionality to generate periodic reports of USB device activity.
+- **Device Whitelisting**: Implement a feature to maintain a list of trusted USB devices to improve the detection of unauthorized devices.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+Feel free to contribute by submitting issues or pull requests. Please follow the contributing guidelines in `CONTRIBUTING.md`.
+
+---
+
+### Additional Resources:
+- [pywin32 Documentation](https://github.com/mhammond/pywin32)
+- [Understanding Windows Event Logs](https://docs.microsoft.com/en-us/windows/win32/eventlog/event-logging)
+
