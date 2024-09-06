@@ -24,3 +24,10 @@
 - **`pywin32` Library**: This is required to access and manage Windows Event Logs. Install it using:
   ```bash
   pip install pywin32
+
+  - Install dependencies:
+  pip install pywin32
+
+- Run the script with admin privileges:
+  python usb_forensics_tool.py
+
