@@ -11,3 +11,10 @@
 - **Identify Unauthorized Devices**: Analyzes logs to detect unauthorized or suspicious USB devices based on predefined keywords or patterns.
 - **Event Filtering**: Filters relevant USB-related Event IDs to avoid unnecessary log clutter.
 - **Cross-referencing for Anomalies**: Cross-references device IDs against a list of known trusted devices.
+
+## Prerequisites
+- **Windows OS**: This tool is designed to run on Windows because it uses the `pywin32` library to access Windows Event Logs.
+- **Python 3.x**: Make sure Python is installed on your system. You can download it from [here](https://www.python.org/downloads/).
+- **`pywin32` Library**: This is required to access and manage Windows Event Logs. Install it using:
+  ```bash
+  pip install pywin32
