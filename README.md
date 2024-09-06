@@ -33,3 +33,22 @@
   ```bash
   python usb_forensics_tool.py
 
+## Code Overview
+
+### `get_usb_activity_logs()`
+This function retrieves logs related to USB activity from the Windows Event Logs. It filters events based on specific Event IDs corresponding to USB plug/unplug events.
+
+### `analyze_usb_activity(logs)`
+This function analyzes the logs retrieved by `get_usb_activity_logs()` and checks for suspicious activity. You can customize it by adding unauthorized device patterns.
+
+### `display_logs(logs)`
+Displays the logs in a readable format, providing information such as event ID, source, timestamp, and messages for each USB event.
+
+## Customization
+
+- **Event IDs**: You can modify the `event_id_list` in `get_usb_activity_logs()` to track different events. Event IDs 2003 and 2101 typically correspond to USB device activity.
+  
+- **Unauthorized Device Detection**: Customize the `unauthorized_keywords` in `analyze_usb_activity()` to match specific device names, serial numbers, or any suspicious behavior you want to flag.
+
+## Example Output
+
