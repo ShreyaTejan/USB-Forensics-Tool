@@ -25,9 +25,11 @@
   ```bash
   pip install pywin32
 
-  - Install dependencies:
+- Install dependencies:
+  ```bash
   pip install pywin32
 
 - Run the script with admin privileges:
+  ```bash
   python usb_forensics_tool.py
 
