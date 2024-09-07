@@ -45,13 +45,13 @@
 ## Usage
 1.  Open a command prompt with administrator privileges (necessary to access Windows Event Logs and registry).
     
-2.  ```bash 
-    cd "C:\\Path\\To\\USB\_Forensics\_Tool"
+-  ```bash 
+    cd "C:\Path\To\USB_Forensics_Tool"
     
-3.  ```bash
-    python USB\_Forensics\_ShreyaFinal.py
+-  ```bash
+    python "USB_Forensics_ShreyaFinal.py"
     
-4.  The script will:
+2.  The script will:
     
     *   Fetch USB activity logs.
         
