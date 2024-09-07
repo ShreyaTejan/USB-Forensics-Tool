@@ -19,15 +19,9 @@
 
 ## Prerequisites
 - **Windows OS**: This tool is designed to run on Windows because it uses the `pywin32` library to access Windows Event Logs.
-- **Python 3.x**: Make sure Python is installed on your system. You can download it from [here](https://www.python.org/downloads/).
-- **`pywin32` Library**: This is required to access and manage Windows Event Logs. Install it using:
-  ```bash
-  pip install pywin32
-
-## Prerequisites
-- **Windows OS**: This tool is designed to run on Windows because it uses the `pywin32` library to access Windows Event Logs.
 - **Python 3.10 or higher**: Make sure Python is installed on your system. You can download it from [here](https://www.python.org/downloads/).
-- **`pywin32` Library**: This is required to access and manage Windows Event Logs. Install it using:
+- **`pywin32` Library**: This is required to access and manage Windows Event Logs.
+  Install it using:
   ```bash
   pip install pywin32
 
