@@ -120,8 +120,11 @@ The tool generates a text report (usb\_forensics\_report.txt) that contains:
 The report is stored in the directory where the script is executed.
 
 
-## Future Scope of the Project
+
 ------------
+
+## Future Scope of the Project
+
 - **Cross-platform support**: Extend compatibility to non-Windows systems like Linux using libraries such as `usbrip`.
 - **Automated Reports**: Add functionality to generate periodic reports of USB device activity.
 - **Device Whitelisting**: Implement a feature to maintain a list of trusted USB devices to improve the detection of unauthorized devices.
@@ -139,8 +142,8 @@ The report is stored in the directory where the script is executed.
 
 **Limitations**
 ---------------
-
-*   The tool currently only works on **Windows** systems due to its reliance on Windows-specific APIs.
+**
+*   The tool currently only works on Windows** systems due to its reliance on Windows-specific APIs.
     
 *   It may need administrative privileges to access system logs and registry information.
     
@@ -173,5 +176,5 @@ All suggestions for improving detection capabilities or adding new features are 
 
 For any questions or issues, please contact:
 
-*   **Shreya Tejan** - \[your.email@example.com\]
+*   **Shreya Tejan** - \[ https://github.com/ShreyaTejan ]
     
