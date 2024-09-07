@@ -47,10 +47,8 @@
     
 -  ```bash 
     cd "C:\Path\To\USB_Forensics_Tool"
-    
 -  ```bash
     python "USB_Forensics_ShreyaFinal.py"
-    
 2.  The script will:
     
     *   Fetch USB activity logs.
