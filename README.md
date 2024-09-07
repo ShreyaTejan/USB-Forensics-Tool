@@ -36,11 +36,14 @@
 **Installation**
 ----------------
 
-1.  bashCopy codegit clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
+-  '''bash
+    git clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
     
-2.  bashCopy codepip install pywin32
+- '''bash
+  pip install pywin32
     
-3.  bashCopy codepython USB\_Forensics\_ShreyaFinal.py
+- '''bash
+   python USB\_Forensics\_ShreyaFinal.py
     
 
 **Usage**
