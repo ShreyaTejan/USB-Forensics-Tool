@@ -33,14 +33,71 @@
   ```bash
   python usb_forensics_tool.py
 
-## Installation
+**Installation**
+----------------
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-repo/usb-forensics-tool.git
-   cd usb-forensics-tool
+1.  bashCopy codegit clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
+    
+2.  bashCopy codepip install pywin32
+    
+3.  bashCopy codepython USB\_Forensics\_ShreyaFinal.py
+    
 
+**Usage**
+---------
 
+1.  Open a command prompt with administrator privileges (necessary to access Windows Event Logs and registry).
+    
+2.  bashCopy codecd "C:\\Path\\To\\USB\_Forensics\_Tool"
+    
+3.  bashCopy codepython USB\_Forensics\_ShreyaFinal.py
+    
+4.  The script will:
+    
+    *   Fetch USB activity logs.
+        
+    *   Fetch USB registry information.
+        
+    *   Analyze logs for unauthorized activity.
+        
+    *   List removable drives and scan them for suspicious files.
+        
+    *   Cross-reference log data with registry information.
+        
+    *   Generate a forensic report (usb\_forensics\_report.txt).
+        
+
+**Script Breakdown**
+--------------------
+
+### **Key Functions**:
+
+*   **get\_usb\_activity\_logs()**: Fetches USB-related events from the Windows Event Log.
+    
+*   **get\_usb\_registry\_info()**: Retrieves information about connected USB devices from the Windows registry.
+    
+*   **analyze\_usb\_activity()**: Analyzes the event logs for unauthorized or malicious USB devices.
+    
+*   **list\_removable\_drives()**: Lists all removable USB drives connected to the system.
+    
+*   **scan\_usb\_drive(drive\_path)**: Scans a USB drive for suspicious files based on defined patterns.
+    
+*   **cross\_reference\_logs\_and\_registry()**: Cross-references event logs and registry information to detect known threats.
+    
+*   **generate\_report()**: Creates a forensic report detailing detected threats and suspicious files.
+    
+
+**Forensic Report**
+-------------------
+
+The tool generates a text report (usb\_forensics\_report.txt) that contains:
+
+*   **Detected Threats**: USB devices flagged as unauthorized or malicious based on the event logs and registry data.
+    
+*   **Suspicious Files**: Files on removable drives that match predefined patterns (e.g., malware indicators).
+    
+
+The report is stored in the directory where the script is executed.
 
 
 ## Code Overview
@@ -78,3 +135,48 @@ Feel free to contribute by submitting issues or pull requests. Please follow the
 - [pywin32 Documentation](https://github.com/mhammond/pywin32)
 - [Understanding Windows Event Logs](https://docs.microsoft.com/en-us/windows/win32/eventlog/event-logging)
 
+**Customization**
+-----------------
+
+*   **File Patterns**: You can modify the file\_patterns list in the scan\_usb\_drive function to add more patterns or keywords for detecting suspicious files.
+    
+*   **Unauthorized Device Detection**: You can modify the unauthorized\_keywords and known\_threats lists to include your organization’s specific keywords or device names for more precise detection.
+    
+
+**Potential Use Cases**
+-----------------------
+
+*   **Corporate Security**: Monitor and log all USB activity in a corporate environment, detect unauthorized devices, and prevent data exfiltration.
+    
+*   **Forensics**: Help forensic teams analyze historical USB connections to a system and detect potential unauthorized access via removable storage.
+    
+*   **Malware Detection**: Identify USB drives that might have been used to transport malware by scanning for suspicious file contents.
+    
+
+**Limitations**
+---------------
+
+*   The tool currently only works on **Windows** systems due to its reliance on Windows-specific APIs.
+    
+*   It may need administrative privileges to access system logs and registry information.
+    
+*   Pattern matching for suspicious files is basic and can be enhanced with more complex regex or integration with a malware scanning engine.
+    
+
+**License**
+-----------
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+**Contributions**
+-----------------
+
+Feel free to contribute to this project by submitting a pull request or opening an issue. All suggestions for improving detection capabilities or adding new features are welcome!
+
+**Contact**
+-----------
+
+For any questions or issues, please contact:
+
+*   **Shreya Tejan** - \[your.email@example.com\]
+    
