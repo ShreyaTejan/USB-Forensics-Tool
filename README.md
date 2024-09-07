@@ -172,9 +172,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to contribute to this project by submitting a pull request or opening an issue. Please follow the contributing guidelines in `CONTRIBUTING.md`.
 All suggestions for improving detection capabilities or adding new features are welcome!
 
-### Additional Resources:
+### Additional Resources
 - [pywin32 Documentation](https://github.com/mhammond/pywin32)
 - [Understanding Windows Event Logs](https://docs.microsoft.com/en-us/windows/win32/eventlog/event-logging)
+
+-------------
+
+# About Me
 
 **Contact Me**
 -----------
