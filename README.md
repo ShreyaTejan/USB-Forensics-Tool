@@ -105,10 +105,11 @@ Displays the logs in a readable format, providing information such as event ID, 
 *   **File Patterns**: You can modify the file\_patterns list in the scan\_usb\_drive function to add more patterns or keywords for detecting suspicious files.
     
 *   **Unauthorized Device Detection**: You can modify the unauthorized\_keywords and known\_threats lists to include your organization’s specific keywords or device names for more precise detection
-
+  
 
 
 ------------
+
 
 ## Future Scope of the Project
 
@@ -117,6 +118,8 @@ Displays the logs in a readable format, providing information such as event ID, 
 - **Automated Reports**: Add functionality to generate periodic reports of USB device activity.
   
 - **Device Whitelisting**: Implement a feature to maintain a list of trusted USB devices to improve the detection of unauthorized devices.
+
+  
 
 **Forensic Report**
 -------------------
@@ -129,6 +132,8 @@ The tool generates a text report (usb\_forensics\_report.txt) that contains:
     
 The report is stored in the directory where the script is executed.
 
+
+
 **Potential Use Cases**
 -----------------------
 
@@ -138,6 +143,7 @@ The report is stored in the directory where the script is executed.
     
 *   **Malware Detection**: Identify USB drives that might have been used to transport malware by scanning for suspicious file contents.
     
+
 
 **Limitations**
 ---------------
@@ -152,7 +158,7 @@ The report is stored in the directory where the script is executed.
 
 
 
----
+-----------
 
 
 **License**
