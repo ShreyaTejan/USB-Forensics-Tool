@@ -16,6 +16,7 @@
 - **Cross-Referencing Logs and Registry**: Detects threats by comparing activity logs with registry data.
 - **Forensic Report Generation**: Outputs a detailed report containing suspicious device activities and detected files.
 
+---
 
 ## Prerequisites
 - **Windows OS**: This tool is designed to run on Windows because it uses the `pywin32` library to access Windows Event Logs.
@@ -32,6 +33,21 @@
 - Run the script with admin privileges:
   ```bash
   python usb_forensics_tool.py
+
+  ## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-repo/usb-forensics-tool.git
+   cd usb-forensics-tool
+
+
+This **Markdown** code provides a full breakdown of the project, covering **features**, **installation**, **usage**, and a **script breakdown**. You can copy and paste this directly into your README file.
+
+
+
+
+   
 
 ## Code Overview
 
