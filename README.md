@@ -32,7 +32,6 @@
     ```bash
     git clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
    
-
 - **Install Dependencies:**
   Ensure you have the necessary Python modules:
 
@@ -43,7 +42,6 @@
   ```bash
   python usb_forensics_tool.py
  
-
 ## Usage
 1.  Open a command prompt with administrator privileges (necessary to access Windows Event Logs and registry).
     
