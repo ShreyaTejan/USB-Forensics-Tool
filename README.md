@@ -176,10 +176,11 @@ All suggestions for improving detection capabilities or adding new features are 
 - [pywin32 Documentation](https://github.com/mhammond/pywin32)
 - [Understanding Windows Event Logs](https://docs.microsoft.com/en-us/windows/win32/eventlog/event-logging)
 
-**Contact**
+**Contact Me**
 -----------
 
 For any questions or issues, please contact:
 
-*   **Shreya Tejan** - \[ https://github.com/ShreyaTejan ]
+*   **GitHub** - \[ https://github.com/ShreyaTejan ]
+*   **LinkedIn** - \[ www.linkedin.com/in/shreya-tejan ]
     
