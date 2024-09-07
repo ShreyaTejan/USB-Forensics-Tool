@@ -41,9 +41,9 @@
 - **Execute** the Python script using the command prompt with admin privileges:
   ```bash
   python usb_forensics_tool.py
+ 
 
-
-**Usage**
+## Usage
 1.  Open a command prompt with administrator privileges (necessary to access Windows Event Logs and registry).
     
 2.  bash Copy codecd "C:\\Path\\To\\USB\_Forensics\_Tool"
@@ -85,6 +85,29 @@
 *   **generate\_report()**: Creates a forensic report detailing detected threats and suspicious files.
     
 
+## Code Overview
+
+### `get_usb_activity_logs()`
+This function retrieves logs related to USB activity from the Windows Event Logs. It filters events based on specific Event IDs corresponding to USB plug/unplug events.
+
+### `analyze_usb_activity(logs)`
+This function analyzes the logs retrieved by `get_usb_activity_logs()` and checks for suspicious activity. You can customize it by adding unauthorized device patterns.
+
+### `display_logs(logs)`
+Displays the logs in a readable format, providing information such as event ID, source, timestamp, and messages for each USB event.
+
+**Customization**
+-----------------
+
+- **Event IDs**: You can modify the `event_id_list` in `get_usb_activity_logs()` to track different events. Event IDs 2003 and 2101 typically correspond to USB device activity.
+  
+- **Unauthorized Device Detection**: Customize the `unauthorized_keywords` in `analyze_usb_activity()` to match specific device names, serial numbers, or any suspicious behavior you want to flag.
+
+*   **File Patterns**: You can modify the file\_patterns list in the scan\_usb\_drive function to add more patterns or keywords for detecting suspicious files.
+    
+*   **Unauthorized Device Detection**: You can modify the unauthorized\_keywords and known\_threats lists to include your organization’s specific keywords or device names for more precise detection.
+
+
 **Forensic Report**
 -------------------
 
@@ -97,48 +120,12 @@ The tool generates a text report (usb\_forensics\_report.txt) that contains:
 The report is stored in the directory where the script is executed.
 
 
-## Code Overview
-
-### `get_usb_activity_logs()`
-This function retrieves logs related to USB activity from the Windows Event Logs. It filters events based on specific Event IDs corresponding to USB plug/unplug events.
-
-### `analyze_usb_activity(logs)`
-This function analyzes the logs retrieved by `get_usb_activity_logs()` and checks for suspicious activity. You can customize it by adding unauthorized device patterns.
-
-### `display_logs(logs)`
-Displays the logs in a readable format, providing information such as event ID, source, timestamp, and messages for each USB event.
-
-## Customization
-
-- **Event IDs**: You can modify the `event_id_list` in `get_usb_activity_logs()` to track different events. Event IDs 2003 and 2101 typically correspond to USB device activity.
-  
-- **Unauthorized Device Detection**: Customize the `unauthorized_keywords` in `analyze_usb_activity()` to match specific device names, serial numbers, or any suspicious behavior you want to flag.
-
-
 ## Future Scope of the Project
+------------
 - **Cross-platform support**: Extend compatibility to non-Windows systems like Linux using libraries such as `usbrip`.
 - **Automated Reports**: Add functionality to generate periodic reports of USB device activity.
 - **Device Whitelisting**: Implement a feature to maintain a list of trusted USB devices to improve the detection of unauthorized devices.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Feel free to contribute by submitting issues or pull requests. Please follow the contributing guidelines in `CONTRIBUTING.md`.
-
----
-
-### Additional Resources:
-- [pywin32 Documentation](https://github.com/mhammond/pywin32)
-- [Understanding Windows Event Logs](https://docs.microsoft.com/en-us/windows/win32/eventlog/event-logging)
-
-**Customization**
------------------
-
-*   **File Patterns**: You can modify the file\_patterns list in the scan\_usb\_drive function to add more patterns or keywords for detecting suspicious files.
-    
-*   **Unauthorized Device Detection**: You can modify the unauthorized\_keywords and known\_threats lists to include your organization’s specific keywords or device names for more precise detection.
-    
 
 **Potential Use Cases**
 -----------------------
@@ -158,17 +145,28 @@ Feel free to contribute by submitting issues or pull requests. Please follow the
 *   It may need administrative privileges to access system logs and registry information.
     
 *   Pattern matching for suspicious files is basic and can be enhanced with more complex regex or integration with a malware scanning engine.
-    
+
+
+
+
+
+---
+
 
 **License**
 -----------
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Contributions**
 -----------------
 
-Feel free to contribute to this project by submitting a pull request or opening an issue. All suggestions for improving detection capabilities or adding new features are welcome!
+Feel free to contribute to this project by submitting a pull request or opening an issue. Please follow the contributing guidelines in `CONTRIBUTING.md`.
+All suggestions for improving detection capabilities or adding new features are welcome!
+
+### Additional Resources:
+- [pywin32 Documentation](https://github.com/mhammond/pywin32)
+- [Understanding Windows Event Logs](https://docs.microsoft.com/en-us/windows/win32/eventlog/event-logging)
 
 **Contact**
 -----------
