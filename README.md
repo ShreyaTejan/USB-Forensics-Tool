@@ -121,8 +121,8 @@ Displays the logs in a readable format, providing information such as event ID, 
 
   
 
-**Forensic Report**
--------------------
+## Forensic Report
+
 
 The tool generates a text report (usb\_forensics\_report.txt) that contains:
 
@@ -134,8 +134,8 @@ The report is stored in the directory where the script is executed.
 
 
 
-**Potential Use Cases**
------------------------
+## Potential Use Cases
+
 
 *   **Corporate Security**: Monitor and log all USB activity in a corporate environment, detect unauthorized devices, and prevent data exfiltration.
     
@@ -145,8 +145,8 @@ The report is stored in the directory where the script is executed.
     
 
 
-**Limitations**
----------------
+## Limitations
+
 
 *   The tool currently only works on Windows** systems due to its reliance on Windows-specific APIs.
     
