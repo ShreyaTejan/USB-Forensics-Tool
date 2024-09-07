@@ -104,8 +104,19 @@ Displays the logs in a readable format, providing information such as event ID, 
 
 *   **File Patterns**: You can modify the file\_patterns list in the scan\_usb\_drive function to add more patterns or keywords for detecting suspicious files.
     
-*   **Unauthorized Device Detection**: You can modify the unauthorized\_keywords and known\_threats lists to include your organization’s specific keywords or device names for more precise detection.
+*   **Unauthorized Device Detection**: You can modify the unauthorized\_keywords and known\_threats lists to include your organization’s specific keywords or device names for more precise detection
 
+
+
+------------
+
+## Future Scope of the Project
+
+- **Cross-platform support**: Extend compatibility to non-Windows systems like Linux using libraries such as `usbrip`.
+  
+- **Automated Reports**: Add functionality to generate periodic reports of USB device activity.
+  
+- **Device Whitelisting**: Implement a feature to maintain a list of trusted USB devices to improve the detection of unauthorized devices.
 
 **Forensic Report**
 -------------------
@@ -117,17 +128,6 @@ The tool generates a text report (usb\_forensics\_report.txt) that contains:
 *   **Suspicious Files**: Files on removable drives that match predefined patterns (e.g., malware indicators).
     
 The report is stored in the directory where the script is executed.
-
-
-
-------------
-
-## Future Scope of the Project
-
-- **Cross-platform support**: Extend compatibility to non-Windows systems like Linux using libraries such as `usbrip`.
-- **Automated Reports**: Add functionality to generate periodic reports of USB device activity.
-- **Device Whitelisting**: Implement a feature to maintain a list of trusted USB devices to improve the detection of unauthorized devices.
-
 
 **Potential Use Cases**
 -----------------------
@@ -141,7 +141,7 @@ The report is stored in the directory where the script is executed.
 
 **Limitations**
 ---------------
-**
+
 *   The tool currently only works on Windows** systems due to its reliance on Windows-specific APIs.
     
 *   It may need administrative privileges to access system logs and registry information.
