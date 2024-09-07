@@ -1,4 +1,4 @@
-# USB-Forensics-Tool
+# USB-Forensics-Tool by Shreya
 
 ## Introduction
 
@@ -22,15 +22,16 @@
 - **Python 3.10 or higher**: Make sure Python is installed on your system. You can download it from [here](https://www.python.org/downloads/).
 - **`pywin32` Library**: This is required to access and manage Windows Event Logs.
   Install it using:
+  
   ```bash
   pip install pywin32
 
 ## Installation
 
 -  **Clone the repository**
-  ```bash
-  git clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
- ```
+    ```bash
+    git clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
+   
 
 - **Install Dependencies:**
   Ensure you have the necessary Python modules:
