@@ -1,3 +1,5 @@
+#USB Forensics Tool
+
 import winreg
 import win32evtlog
 import win32evtlogutil
