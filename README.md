@@ -161,13 +161,12 @@ The report is stored in the directory where the script is executed.
 -----------
 
 
-**License**
------------
+## License 
+
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Contributions**
------------------
+## Contributions
 
 Feel free to contribute to this project by submitting a pull request or opening an issue. Please follow the contributing guidelines in `CONTRIBUTING.md`.
 All suggestions for improving detection capabilities or adding new features are welcome!
@@ -179,6 +178,7 @@ All suggestions for improving detection capabilities or adding new features are 
 -------------
 
 # About Me
+
 Hi I am Shreya Tejan! 
 I am currently a sophomore, pursuing B.Tech CSE, with a passion for cybersecurity and a knack for developing efficient tools. My skills span across various programming languages, including Python, C, Java, C++, and MySQL. I'm also proficient in web development (HTML, CSS, Bootstrap) and have a strong understanding of UI/UX design principles. 
 Currently, I'm focused on building a USB Forensics Tool to aid in forensic investigations by analyzing and extracting crucial data from USB devices. This project reflects my interest in cybersecurity and my drive to create meaningful, real-world solutions.
