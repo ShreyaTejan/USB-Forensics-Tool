@@ -28,9 +28,10 @@
 ## Installation
 
 -  **Clone the repository**
-  '''bash
+  ```bash
   git clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
-    
+ ```
+
 - **Install Dependencies:**
   Ensure you have the necessary Python modules:
 
@@ -41,9 +42,8 @@
   ```bash
   python usb_forensics_tool.py
 
+
 **Usage**
-
-
 1.  Open a command prompt with administrator privileges (necessary to access Windows Event Logs and registry).
     
 2.  bash Copy codecd "C:\\Path\\To\\USB\_Forensics\_Tool"
@@ -94,7 +94,6 @@ The tool generates a text report (usb\_forensics\_report.txt) that contains:
     
 *   **Suspicious Files**: Files on removable drives that match predefined patterns (e.g., malware indicators).
     
-
 The report is stored in the directory where the script is executed.
 
 
