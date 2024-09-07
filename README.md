@@ -1,4 +1,4 @@
-# USB-Forensics-Tool by Shreya
+# USB Forensics Tool by Shreya
 
 ## Introduction
 
