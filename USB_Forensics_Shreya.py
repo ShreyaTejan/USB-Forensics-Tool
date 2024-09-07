@@ -53,12 +53,20 @@ def get_usb_registry_info():
     usb_info = []
 
     try:
-        with win32reg.OpenKey(win32reg.HKEY_LOCAL_MACHINE, usb_registry_key) as key:
-            for i in range(0, win32reg.QueryInfoKey(key)[0]):
-                subkey_name = win32reg.EnumKey(key, i)
-                with win32reg.OpenKey(key, subkey_name) as subkey:
-                    device_desc = win32reg.QueryValueEx(subkey, "DeviceDesc")[0]
-                    serial_number = win32reg.QueryValueEx(subkey, "SerialNumber")[0] if "SerialNumber" in win32reg.QueryValueEx(subkey, "") else "Unknown"
+        with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, usb_registry_key) as key:
+            for i in range(0, winreg.QueryInfoKey(key)[0]):
+                subkey_name = winreg.EnumKey(key, i)
+                with winreg.OpenKey(key, subkey_name) as subkey:
+                    try:
+                        device_desc = winreg.QueryValueEx(subkey, "DeviceDesc")[0]
+                    except FileNotFoundError:
+                        device_desc = "Unknown"
+                    
+                    try:
+                        serial_number = winreg.QueryValueEx(subkey, "SerialNumber")[0]
+                    except FileNotFoundError:
+                        serial_number = "Unknown"
+                    
                     usb_info.append({
                         'DeviceDesc': device_desc,
                         'SerialNumber': serial_number
@@ -73,11 +81,9 @@ def analyze_usb_activity(logs):
     unauthorized_devices = []
     
     # Add logic to define "unauthorized" based on your organization rules
-    # Example: Checking if specific USB device names or serials are unauthorized
     unauthorized_keywords = ["Unknown", "Unauthorized Device", "Malware"]
     
     for log in logs:
-        # Check if message contains unauthorized keywords
         if any(keyword in log['Message'] for keyword in unauthorized_keywords):
             unauthorized_devices.append(log)
     
@@ -197,4 +203,3 @@ if __name__ == "__main__":
         print("Report generated: usb_forensics_report.txt")
     else:
         print("No threats detected.")
-        
