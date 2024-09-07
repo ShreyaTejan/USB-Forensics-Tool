@@ -45,9 +45,11 @@
 ## Usage
 1.  Open a command prompt with administrator privileges (necessary to access Windows Event Logs and registry).
     
-2.  bash Copy codecd "C:\\Path\\To\\USB\_Forensics\_Tool"
+2.  ```bash 
+    cd "C:\\Path\\To\\USB\_Forensics\_Tool"
     
-3.  bashCopy codepython USB\_Forensics\_ShreyaFinal.py
+3.  ```bash
+    python USB\_Forensics\_ShreyaFinal.py
     
 4.  The script will:
     
