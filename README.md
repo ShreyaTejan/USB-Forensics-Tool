@@ -25,16 +25,10 @@
   ```bash
   pip install pywin32
 
-- Install dependencies:
-  ```bash
-  pip install pywin32
 
-- Run the script with admin privileges:
-  ```bash
-  python usb_forensics_tool.py
 
 ## Installation
-----------------
+
 
 -  **Clone the repository**
   '''bash
@@ -43,20 +37,19 @@
 - **Install Dependencies:**
   Ensure you have the necessary Python modules:
 
-  '''bash
+  ```bash
   pip install pywin32
-    
-- Execute the Python script using the command prompt (ensure you're using administrative privileges):
-  '''bash
-   python USB\_Forensics\_ShreyaFinal.py
-    
+
+- **Execute** the Python script using the command prompt with admin privileges:
+  ```bash
+  python usb_forensics_tool.py
 
 **Usage**
----------
+
 
 1.  Open a command prompt with administrator privileges (necessary to access Windows Event Logs and registry).
     
-2.  bashCopy codecd "C:\\Path\\To\\USB\_Forensics\_Tool"
+2.  bash Copy codecd "C:\\Path\\To\\USB\_Forensics\_Tool"
     
 3.  bashCopy codepython USB\_Forensics\_ShreyaFinal.py
     
