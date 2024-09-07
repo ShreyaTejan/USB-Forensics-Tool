@@ -33,16 +33,21 @@
   ```bash
   python usb_forensics_tool.py
 
-**Installation**
+## Installation
 ----------------
 
--  '''bash
+-  **Clone the repository**
+  '''bash
     git clone https://github.com/username/usb-forensics-tool.gitcd usb-forensics-tool
     
-- '''bash
+- **Install Dependencies:**
+  Ensure you have the necessary Python modules:
+
+  '''bash
   pip install pywin32
     
-- '''bash
+- Execute the Python script using the command prompt (ensure you're using administrative privileges):
+  '''bash
    python USB\_Forensics\_ShreyaFinal.py
     
 
