@@ -11,6 +11,15 @@ import os
 import string
 import re
 from datetime import datetime
+import logging
+
+# logging initialize 
+logging.basicConfig(
+    filename='usb_forensics.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
 
 # Function to get USB device activity logs from the system
 def get_usb_activity_logs():
